@@ -6,6 +6,9 @@ import software.amazon.awscdk.StackProps;
 // import software.amazon.awscdk.Duration;
 // import software.amazon.awscdk.services.sqs.Queue;
 
+/**
+ * A CloudFormation stack used in an app.
+ */
 public class AwsCdkStack extends Stack {
     public AwsCdkStack(final Construct scope, final String id) {
         this(scope, id, null);

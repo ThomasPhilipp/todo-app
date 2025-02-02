@@ -8,8 +8,10 @@ import java.util.Arrays;
 
 public class AwsCdkApp {
     public static void main(final String[] args) {
+        // creates an app instance
         App app = new App();
 
+        // create a stack instance which is used by the app
         new AwsCdkStack(app, "AwsCdkStack", StackProps.builder()
                 // If you don't specify 'env', this stack will be environment-agnostic.
                 // Account/Region-dependent features and context lookups will not work,
@@ -36,6 +38,7 @@ public class AwsCdkApp {
                 // For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
                 .build());
 
+        // creates the cdk.out folder
         app.synth();
     }
 }
