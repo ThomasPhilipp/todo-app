@@ -24,7 +24,7 @@ public class AwsCdkApp {
                 app,
                 "SpringBootApplication",
                 makeEnv(accountId, region),
-                "docker.io/zwickit/todo-app-v1:latest");
+                "docker.io/stratospheric/todo-app-v1:latest");
 
         // creates the cdk.out folder
         app.synth();
