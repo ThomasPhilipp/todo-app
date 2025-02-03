@@ -50,6 +50,7 @@
             <version>${constructs.version}</version>
         </dependency>
 
+        <!-- Construct from Stratospheric book -->
         <dependency>
             <groupId>dev.stratospheric</groupId>
             <artifactId>cdk-constructs</artifactId>
